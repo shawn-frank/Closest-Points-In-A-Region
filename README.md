@@ -14,3 +14,12 @@ A region is defined as follows:
 
 ![image](https://user-images.githubusercontent.com/80219691/150936813-d36f854e-f62d-4487-89e2-226d0c4a8336.png)
 
+# Approach
+
+- Filter the array to get an array of only valid points that fall in the region
+- Get the distances between the valid points in the region
+- Option 1: is sort the distances array to get the closest pair in O(n log n)
+- Option 2: would be to use a min heap to get the closest pair in O(n)
+
+A swift implementation of Heap can be taken from: https://github.com/shawn-frank/Swift-Data-Structures-And-Algorithms/tree/production/Heap
+
