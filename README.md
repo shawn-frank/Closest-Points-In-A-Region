@@ -10,9 +10,15 @@ let startPoint = CGPoint(x: 80, y: 20)
 let endPoint = CGPoint(x: 170, y: 440)
 ```
 
-A region is defined as follows:
+A region is defined as follows in the iOS coordinate system with the top left being 0,0:
 
-![image](https://user-images.githubusercontent.com/80219691/150936813-d36f854e-f62d-4487-89e2-226d0c4a8336.png)
+![image](https://user-images.githubusercontent.com/80219691/151209372-387abde2-39b7-4566-ab36-8d96da45ef75.png)
+
+So to define a valid region, here are the rules:
+- the start x and start y will be <= end x and end y.
+- Start and end can be a straight line
+- Start and end can be the same point
+- But end cannot be below or to the left of start
 
 # Approach
 
