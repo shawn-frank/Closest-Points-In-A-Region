@@ -36,7 +36,7 @@ struct PointPair: Comparable, Hashable
     }
     
     // Need to implement this to conform to Hashable so we can insert a PointPair
-    // into dictionaries and data strcutures that work with Hashable types
+    // into dictionaries and data structures that work with Hashable types
     func hash(into hasher: inout Hasher)
     {
         hasher.combine(startPoint.x)
@@ -58,8 +58,8 @@ extension CGPoint
     /// `regionStart` has  to be less than or equal to `regionEnd` for a
     /// valid check to occur.
     /// - Parameters:
-    ///   - regionStart: The bottom left of the region
-    ///   - regionEnd: The top right of the region
+    ///   - regionStart: The top left of the region
+    ///   - regionEnd: The bottom right of the region
     /// - Returns: True if the current point falls within the region
     func doesExistInRegion(regionStart: CGPoint, regionEnd: CGPoint) -> Bool
     {
@@ -105,7 +105,7 @@ if let nearestPoint = retrieveClosestPairUsingSort(fromPoints: validPoints)
 
 if let nearestPoint = retrieveClosestPairUsingHeap(fromPoints: validPoints)
 {
-    print("The nearest pair using heap O(n) is")
+    print("The nearest pair using heap O(log n) is")
     print(nearestPoint.display())
 }
 
