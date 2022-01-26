@@ -1,4 +1,4 @@
-# Closest-Points-In-A-Region
+# Closest points in a region using Swift
 Find the closest pair of CGPoints that exist in a region. This was created in response to this question: https://stackoverflow.com/questions/70844120/find-points-between-two-cgpoints/70845089
 
 For example, here is the input you have:
