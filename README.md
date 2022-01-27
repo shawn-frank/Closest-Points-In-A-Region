@@ -14,6 +14,8 @@ A region is defined as follows in the iOS coordinate system with the top left be
 
 ![image](https://user-images.githubusercontent.com/80219691/151209372-387abde2-39b7-4566-ab36-8d96da45ef75.png)
 
+However, the below logic will work in other 2D coordinate systems where the bottom left is 0, 0 for instance
+
 So to define a valid region, here are the rules:
 - the start x and start y will be <= end x and end y.
 - Start and end can be a straight line
